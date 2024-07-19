@@ -1,0 +1,177 @@
+/* Estilo Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+/* Conteúdo Principal */
+main {
+    margin: 20px;
+}
+
+/* Botão */
+.btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Galeria */
+#gallery {
+    margin-top: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    max-width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Modal Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Botão de Fechar */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Estilo da Barra de Pesquisa */
+#search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Data e Hora */
+#clock {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#date-time {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ajuste para Dispositivos Móveis */
+@media (max-width: 600px) {
+    .gallery-item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: none;
+    }
+}
+/* Botão */
+.btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: inline-block; /* Faz o link se comportar como um botão */
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
